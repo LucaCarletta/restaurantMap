@@ -1,12 +1,12 @@
 # restaurantMap
 
 
-##Prerequesits
+## Prerequisites
 1. node.js Version 12.14.1
 2. VsCode + Live Server Extention
 3. Browser
 
-##Steps 
+## Steps 
 1. Clone Git Repo
 2. Go into the Backend Folder
 3. Type `npm i`
