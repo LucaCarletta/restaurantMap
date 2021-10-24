@@ -5,42 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Restaurant Map</title>
 </head>
 
 <body>
-    <h1>Restaurant Map</h1>
+    <div class="mx-auto p-5">
+        <h1>Restaurant Map</h1>
 
-    <div class="search-container">
-        <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">Search<i class="fa fa-search"></i></button>
-        </form>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Search<i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <div class="pt-4 ">
+            <div class="form-check">
+                <input type="radio" id="günstig" name="preis" value="1" checked>
+                <label for="günstig">Günstig</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="mittlerer Preis" name="preis" value="2" checked>
+                <label for="mittlerer Preis">Mittlerer Preis</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="teuer" name="preis" value="3" checked>
+                <label for="teuer">Teuer</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="sehr teuer" name="preis" value="4" checked>
+                <label for="sehr teuer">Sehr Teuer</label>
+            </div>
+            <input type="submit" id="submitbutton" class="btn btn-dark mt-2" value="Submit">
+        </div>
+        <div id="image" class="pt-4"></div>
     </div>
-
-    <div>
-
-        <input type="radio" id="günstig" name="preis" value="1" checked>
-        <label for="günstig">günstig</label>
-        <br>
-
-        <input type="radio" id="mittlerer Preis" name="preis" value="2" checked>
-        <label for="mittlerer Preis">mittlerer Preis</label>
-        <br>
-
-        <input type="radio" id="teuer" name="preis" value="3" checked>
-        <label for="teuer">teuer</label>
-        <br>
-
-        <input type="radio" id="sehr teuer" name="preis" value="4" checked>
-        <label for="sehr teuer">sehr teuer</label>
-        <br>
-
-        <input type="submit" id="submitbutton" value="Submit">
-
-    </div>
-    <div id="image"></div>
 </body>
 <script src="./programm.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </html>
