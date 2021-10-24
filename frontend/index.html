@@ -11,6 +11,13 @@
 <body>
     <h1>Restaurant Map</h1>
 
+    <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Search<i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
     <div>
 
         <input type="radio" id="günstig" name="preis" value="1" checked>
@@ -32,7 +39,7 @@
         <input type="submit" id="submitbutton" value="Submit">
 
     </div>
-
+    <div id="image"></div>
 </body>
 <script src="./programm.js"></script>
 
